@@ -1,0 +1,145 @@
+												Tablelas
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- para começarmos nossa tabela primeiro criamos a tag <table> e dentro se quisermos podemos colocar mais uma tag para expecificar o que vai ser colocado na minha tabela. Essa tag se chama caption.
+
+<table>
+    <caption>Produtos</caption>
+</table>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Agora vamos começar a produção da minha tabela: 
+--Da mesma forma que é igual a uma criação de uma página, é a criação de uma tabela. Primeiro temos o nosso cabeçalho, depois tempos o nosso meio da pagina que seria o tbody e depois o nosso rodapé.
+
+--Começando nosso cabeçalho ele vai ficar da seguinte maneira: 
+
+<table>
+    <caption>Produtos</caption>
+    <thead>
+        <tr>
+             <th>Teclado</th>
+ 		  <th>Preço</th>
+ 		  <th>Quantidade</th>
+ 		  <th>Valor Total</th>
+ 	 </tr>
+    </thead>
+</table>
+
+
+Começamos pelo thead que é responsavel pelo meu cabeçalho da tabela e enfim dentro deles colocamos a tag 'tr' e dentro da minha tag tr temo a tag 'th' que nela ficarão guardados todos os titulos da minha tabela;
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Depois temos a minha tbody que vai ficar com a parte do meio da tabela;
+
+ <tbody>
+     <tr>
+         <td>Redragon Kumara</td>
+         <td>110,00R$</td>
+         <td>1</td>
+         <td>110,00R$</td>
+     </tr>
+ </tbody>
+ 
+ -- Assim como a criação do meu cabeçalho vai ser a criação do corpo da minha tabela; Depois de criar a tag <tbody> vamos criar dentro dela novamente a tag <tr> e dentro da minha tag <tr> vai conter a tag <td> responsavel pelo conteúdo centralda minha tabela.
+ -- E ainda posso adicionar mais alguns exemplos. 
+ -- E já posso se quiser ir adiantando a parte do css, da minha tabela. apenas adicionando uma ( border ) dentro da minha tag <table> lá no inicio  
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- Agora vou criar meu <tfoot> que vai ser a parte  do pé da minha tabela. E novamente colocaremos a nossa tag <tr> e dentro dela vamos colocar a tag <td> 
+-- Mas dentro da nossa tag <td> se eu quiser que uma parte do meu conteudo ocupe mais espaço dentro da tag digitaremos o seguinte : colspan="ex.3"
+--E abaixo e na frente do meu valor vou colocar o total. 
+
+<tfoot>
+    <tr>
+        <td colspan="3">Total</td>
+        <td>1210,00R$</td>
+    </tr>
+</tfoot>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<table border="1">
+    <caption>Produtos</caption>
+    <thead>
+        <tr>
+            <th>Teclado</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Valor Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Redragon Kumara</td>
+            <td>110,00R$</td>
+            <td>1</td>
+            <td>110,00R$</td>
+        </tr>
+        <tr>
+            <td>Razer Chroma</td>
+            <td>219,99R$</td>
+            <td>5</td>
+            <td>1100,00R$</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total</td>
+            <td>1210,00R$</td>
+        </tr>
+    </tfoot>
+    
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Agora vamos dar uma estilizada ana nossa tabela, primeiro podemos tirar a borda que tem nela usando um bordercollapse: collapse; 
+-- não esquecendo... tudo isso vai ficar dentro do meu <style> com o atributo da tag : table; 
+-- Mas como agora eu vou estilizar minha tabela e deixar mais organizada eu vo tirar a border que ficou la na minha table; 
+-- Vou atribuir no meu css um padding de alguns pixel para que eu possa deixar um espaçamento entre os conteudos da minha tabela, para isso eu atribuo as tags td, th
+-- vou atribuir tbm um boder-bottom: solid 2px / para que apareça uma linha que vai separar o meu conteudo que esta em th ou seja o conteudo da cabeça da minha tabela;
+-- e ainda posso atribuir uma cor para meu boder que esta no meu th; 
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+    }
+    thead th{
+    border-bottom: solid 2px #444; 
+    }
+</style>
+
+</table>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- Agora vou tratar da minha td / que está presente no meu tbody; Esse tbody , vou atribuir uma função chamada hover que serve como uma mudança de cor ao passar o mouse no conteudo da minha tbody;
+-- e vou atribuir uma cor para a minha tbody quano eu passar o mouse, faço isso utilizando o comando background-color;
+--Agora tudo o conteudo que está presente no meu td vai mudar de cor ao passar o mouse; 
+
+tbody td:hover {
+    background-color: grey
+}
+tfoot td {
+    background-color: chartreuse;
+}
+
+
+-- e ainda por curioso eu quis colocar uma cor para destacar o valor total, no caso eu atribui uma tfoot td e dentro coloquei minha backgroud-color, assim o conteudo que esta na minha td dentro do tfoot vai ficar com uma cor só.
+-- posso deixar o meu total com mais evidencia usando o bold para deixar em negrito; 
+-- Acrescento um color se quiser para dar uma cor para a minha fonte; 
+
+tfoot td {
+    background-color: chartreuse;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+  
+													
+													

@@ -1,0 +1,95 @@
+												//HTML//
+												
+												
+												
+											
+Tags em html: 
+
+uma tag ele é da seguinte maneira: <tag>
+Se a tag possui tag de fechamento ficará assim: 
+E usamos esse comando para colocar um documentario: <!-- -->
+
+
+<tag>
+	<!--	corpo da tag  -->
+</tag>						
+
+
+Podemos ter alem de uma tag outras tags dentro dela que denominamos de tags filhas, ex.: 
+
+<tag>
+    <!-- Corpo de uma tag -->
+    <opa>
+        <ola>
+            <t.bem?>
+                
+            </t.bem>
+        </ola>
+    </opa>
+</tag>			
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+E posso tabem ter varias tags dentro de outra: 
+
+<tag>
+    <!-- Corpo de uma tag -->
+    <opa>
+        <ola>
+            <t.bem?>
+                <texto></texto>
+                <texto></texto>
+                <texto></texto>
+                <texto></texto>
+            </t.bem>
+        </ola>
+    </opa>
+</tag>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Alguns exemplos de tags que não contem tag de fechamento: 
+
+<br> / <input> / <meta> 
+
+Mas não quer dizer que eu não possa colocar uma ( / ) no final.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+E tbm podemos atribuir parametros para a minha tag: 
+
+
+<!--Tag com corpo com parametros-->
+
+<tag param1="valor1" param2="valor2"></tag>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!--Tag sem corpo com parametros-->
+
+<tag param3="valor3" param4="valor4">
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Vamos ver algumas tag com alguns parametros: 
+
+<input type="text">
+<input type="button" value= "submit">
+
+Eu tenho aqui duas tag's input com parametros... 
+
+A primeira tag tem um parametro do tipo 'texto' = text
+E a minha segunda tag tem um parametro do tipo 'botão' = button e ele ainda entrega um 'valor' = value/ eu posso atribuir uma label do meu botão. 
+
+
+    
+
+
+
+

@@ -1,0 +1,118 @@
+											<!--Imagens-->
+											
+											
+										
+Vamos usar tags que são feitas para trabalhar com jpg, jpeg, png, gif's... entre outros tipos de imagens.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<p>
+    <img src="">
+</p>
+
+--Não precisamos colocar a nossa tag img dentro de uma tag p.. aí eu coloquei para que ficasse melhor de fazer um modo slide;
+--Para pegarmos uma imagem utilizamos dessa maneira...
+--O src é o local onde vamos colocar um link que nos levará onde está a imagem que nós queremos usar... se formos puxar uma imagem do browser, por exemplo, usaremos um link ansoluto, 
+se formos buscar em uma pasta usaremos links relativos. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--Colocando minha imagem ainda posso fazer algumas atribuições como: o titulo da minha imagem, quando eu por o mouse sobre a imagem mostrará o titulo; 
+
+dessa maneira: 
+
+<p>
+    <img src="/exercicios/img/illustration-hero.svg" 
+    alt="Ouvindo"
+    title="Ouvindo música">
+</p>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+												<!--Vamos usar agora um gif-->
+												
+<p>
+    <img src="/exercicios/img/pixel-jeff-clipa-s.gif" alt="Gif" title="Gif" height="550px">
+</p>
+
+--eu usei a mesma propriedade que eu atribui para minha imagem.
+--E aí eu usei a propriedade height para ajustar a largura da minha imagem. Cuidado para sem querer não deformar a imagem. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Uma coisa interessante é que eu posso usar uma condição quando eu for trabalhar com imagens.
+
+
+<p>
+    <source media="(min-width: )" src="/exercicios/img/icon-music.svg">
+    <img src="/exercicios/img/favicon-32x32.png">
+</p>
+
+
+-- Essa atribuição vai acontecer a partir da meu atributo media, ou seja, se eu estiver usando um link absoluto e não encontrar minha imagem, eu posso tbm usar a tag img agora para pegar essa imagem ;
+seja num link absoluto ou relativo, na tag source eu tbm posso usar link absoluto, mas lembrando que só funcionar com o src. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

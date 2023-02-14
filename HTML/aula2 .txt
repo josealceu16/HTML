@@ -1,0 +1,120 @@
+											//Anatomia de uma página HTML//
+											
+											
+Na estrutura do nosso html nós vamos indicar qual o tipo do nosso documento, feito isso vamos estabelecer nossa tag 'html'
+Depois colocamos a nossa tag 'head' que é o nosso cabeçalho a "cabeça" da minha página vai ficar as coisas não visuais com a exeção da tag title...
+E depois da miha tag head fora dela teremos a tag 'body' E dentro da minha 'head' posso estabelecer um titulo do meu projeto, usando a tag 'title'.
+da seguinte maneira: 
+
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>anatomia do html</title>
+	</head>
+
+	<body>
+
+	</body>
+
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+E ainda tempos a tag link onde posso importar diversos arquivos como o meu css ou meu Js, etc...
+Posso tbm colocar mais tag's que vão ficar a minha boty, como: header, nav, section, footer, div, entre outras;
+E dentro da minha section posso usar uma propriedade chamada 'id' para dizer o que a section representa;
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>anatomia do html</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header></header>
+		<nav></nav>
+		<section id="conteudo"></section>
+		<footer></footer>
+	</body>
+
+</html>
+
+Se eu entrar no meu projeto não vai ter nada, por quê? Porque todas essas tag tem a função de semântica do meu código, Ok?!
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Dentro da minha tag <header/> posso colocar uma outra tag que é a tag <h1> usada para fazer o meu cabeçalho;
+
+<header>
+    <h1>Minha estrutura HTML5</h1>
+</header>
+
+A função do meu 'h1' é criar um cabeçalho. 
+A partir do momento que eu atualizar minha página vai mostrar o meu cabeçalho.
+
+E temos tambem a minha tag <a> que serve de navegação: 
+
+ <nav>
+     <a href="/"></a>
+ </nav>
+
+E temos tambem a tag  'anside'
+que vai servir como posicionar algo na lateral.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aula2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Minha estrutura HTML5</h1> = //cabeçalho//
+    </header>
+    
+    <nav>
+    	<a href="/"></a> = //link//
+    </nav>
+    <section id="conteudo"> = //representação// 
+    </section>
+    <aside></aside> = //Lateral// 
+    <footer></footer> = //rodapé//
+    
+</body>
+
+</html>
+
+
+
+												OBS!!
+												
+												
+Especificamente eu não preciso usar a minha h1 somente numa header, mas como posso usar tbm numa boty, ok ?									
+								
+
+
+
+
+
+
+
+
+
+
+

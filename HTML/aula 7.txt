@@ -1,0 +1,52 @@
+												Links
+												
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+										          <!--URL Absoluta-->
+										          
+										         
+<a href="http://www.google.com.br">Google 1</a><br>
+<a href="http://www.google.com.br" target="_blank">Google2</a><br>			
+
+Qual a diferença delas duas? 
+--Que no meu link 1 a minha página vai se direcionar para o link sem criar uma nova guia.
+--Já o segundo link com a função target=blank eu consigo ir para o link em uma nova guia.
+
+OBS! = sempre que eu for tratar de URL's absolutas eu tenho que obrigatoriamente começar com o http;
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+												<!--URL Relativa-->
+												
+<a href="index.html">volta</a><br><br>
+<a href="/links.html">volta2</a><br><br
+<a href="http:../index.html">volta3</a>
+
+-- Tenho tres exemplos de urls relativas.
+-- A funçao delas é faz um retorno para um link, dependendo da situação alguma não vai funcionar.
+--Perceba que no primeiro link eu tento acessar um link que não existe, no caso o meu redirecionamento seria para a página inicial; 
+--Veja o segundo link. Quando eu aperto nele vai dar certo porquê com esse metodo eu vou acessar a pasta raiz da minha aplicação que ai seria a pasta html;
+--No meu terceiro exemplo/link vai ocorrer o mesmo como aconteceu no meu link 2.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    												
+    											<!--Como redirecionar o usuário para um link de email da página-->
+    											
+    											
+    											
+ -- colocando a tag link e nela usando a seguinte função = mailto:email....@gmail.com;
+ 
+ 
+<a href="mailto:....@gmail.com.br">Entre em contato conosco!</a>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 																					

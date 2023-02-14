@@ -1,0 +1,56 @@
+<h1>Formulário</h1>
+<form action="http://localhost:3003/usuarios" method="post">
+    <input type="text" name="nome" placeholder="Digite seu nome">
+    <input type="password" name="password" placeholder="Digite sua senha">
+    <textarea name="bios" cols="30" rows="10" placeholder="Digite sua biografia"></textarea>
+    <div>
+        <h2>
+            Nível de esperiência
+        </h2>
+        <input type="radio" name="tipo">Sênior
+        <input type="radio" name="tipo">Pleno
+        <input type="radio" name="tipo">Junior
+    </div>
+    <h1>Selecione o seu estado</h1>
+    <select name="estado">
+        <option>Selecione</option>
+        <option value="pb">Paraiba</option>
+        <option value="ce">Ceará</option>
+        <option value="pe">Pernambuco</option>
+        <option value="ma">Maranhão</option>
+    </select>
+    <button>Enviar</button>
+</form>
+<style>
+    * {
+        font-family: 'Oswald', sans-serif;
+        background-color: blanchedalmond;
+    }
+
+    input,
+    textarea,
+    h2 {
+        display: block;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        cursor: pointer;
+        margin-block: 26px;
+        padding: 5;
+        display: block;
+    }
+
+    input[type=radio] {
+        display: inline;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    select {
+        padding: 4;
+    }
+</style>

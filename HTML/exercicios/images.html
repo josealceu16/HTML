@@ -1,0 +1,38 @@
+<h1>Imagens</h1>
+<div wm-slider>
+    <p>
+        <img src="/HTML/exercicios/img/illustration-hero.svg" alt="Ouvindo" title="Ouvindo música" height="400px">
+        <!--Vamos usar agora um gif-->
+    <p>
+        <img src="/HTML/exercicios/img/pixel-jeff-clipa-s.gif" alt="Gif" title="Gif" height="320px">
+    </p>
+    <source srcset="http://files.cod3r.com.br/curso-wev/logo-larga.png" media="(min-width)">
+    </p>
+</div>
+<style p { display: inline; block-size: none; position: absolute; animation: infinite; } </style>
+    <script>function mover(elem, inicio, fim, passo, callback) {
+        const novoInicio=inicio - passo if (novoInicio >=fim) {
+            elem.style.left=novoInicio+'px'
+            setTimeout(()=> mover(elem, novoInicio, fim, passo, callback), 7)
+        }
+
+        else {
+            callback()
+        }
+    }
+
+    //const p=document.querySelector('[wm-slider]> p') p.style.display='block'
+    //mover(p, 1500, -400, 5, ()=> {
+    //console.log('Terminou!!') //
+    //})
+    funcion slider() {
+        const elementos=document.querySelctorALL('[wm-slider] > p') const slides=Array.from(elementos) exibirSlide(slides, slides [0])
+    }
+
+    function exibirSlide(slides, slide) {
+
+        slide.style.display='block'
+        const inicio=inner-width const fim=-client-width
+    }
+
+    </script>

@@ -1,0 +1,105 @@
+											Estruturando exercicios
+											
+											
+Vamos aprender como criar links para redirecionarmos na nossa página. veja: 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de HTML</title>
+</head>
+
+<body>
+    <header>
+        Exercicio HTML
+    </header>
+    <nav>
+        <a href="exercicios/teste.html">00- Teste</a>
+    </nav>
+    <section id="Conteudo"></section>
+</body>
+
+</html>
+											
+
+
+
+
+
+-- Para a gente criar um link não basta colocar só o diretorio da nossa página. Mas não basta só colocar os diretorios na tag link, mas sim, colocar entre as minhas tag um nome. 
+É esse nome que vai nos redirecionar para uma pagina.		
+
+
+    <nav>
+        <a href="exercicios/teste.html">00- Teste</a>
+    </nav>
+		
+		
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Feito isso perceba que ao clicar nosso link nos leva para outra pág. mas eu não quero isso, para fazer com que gere só uma pág para isso usamos a tag <script> veja como que fica:
+
+
+<script>
+    document.querySelectorAll('a').forEach(link => {
+    link.onclick = function (e) {
+    console.log('ação!!!')
+        }
+    }
+</script>		
+
+
+-- usamos o conando =   -------   document.querySelectorAll('').forEach(link => {     -------- para selecionar todos os meus links como eu ainda so tenho um a partir do momento que eu criar mais ele ja vai adicionando .
+E dentro das aspas colocamos a tag que vai ser utilizada para selecionar os link, no caso seria a tag 'a'
+-- Depois colocamos o comando	 --------- link.onclick = function (e) {  	-------------- para que no momento que eu clicar no link meu site não vai ter que redirecionar para outra guia e dentro das aspas colocamos a letra 'e' que  significa evento.
+-- E por fim o comando 	---------------   console.log('ação!!!')  ------------------  que ele obviamenre vai fazer a ação de não criar uma guia.
+
+
+
+
+
+					// mas o nosso objetivo é pegar o link fazer uma requisição em ajax e juntar tudo, só vai acontecer dessa maneira//
+								
+								
+								
+-- para realizarmos essa requizição vamos usar o nosso comando 'feth(link.href) para fazer a nossa requisição ajax;
+-- e precisamos tbm pegar o nosso conteudo, a partir do comando => ------ const conteudo = document.getElementById('conteudo') ----------- dentro das aspas colocamos os nome que demos para a nossa section que nele esta contido uma 'id';
+Obs. não precisamos usar o # para declarar nossa 'id'
+-- criaremos um atributo chamado then e nele colocaremos uma função chamada resp.text para pegar o meu conteudo html;
+-- e mais uma vez criaremos o then que dessa vez vai usar a função html para que pegar todo o conteudo html que esta em html;
+
+
+O meu código vai ficar dessa maneira: 
+
+
+
+  <script>
+    document.querySelectorAll('a').forEach(link => {
+        const conteudo = document.getElementById('conteudo')
+        link.onclick = function (e) {
+            e.preventDefault()
+            fetch(link.href)
+                .then(resp => resp.text())
+                .then(html => conteudo.innerHTML = html)
+        }
+    })
+</script>
+
+
+
+-- Assim eu vou adicionar meu conteudo a minha pagina inicial apenas apertando no link.				
+
+
+
+
+
+
+
+							

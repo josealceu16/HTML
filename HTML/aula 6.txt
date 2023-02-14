@@ -1,0 +1,341 @@
+													Listas 
+													
+													
+													
+												<!--Lista Ordenada-->
+
+-- Quando eu tiver uma lista ordenada eu começo pela tag <ol>;
+--Dentro da minha tag 'ol' vou colocar minha tag 'li' de listas;  
+--Quando eu fizer isso automaticamente meu programa vai fazer uma lista : 
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h1>Listas</h1>
+    <!--Listas Ordenadas-->
+    <h2>Aprovado</h2>
+    <ol>
+        <li>Alceu</li>
+        <li>Julio</li>
+        <li>Igor</li>
+        <li>Ribamar</li>
+    </ol>
+</body>
+
+</html>	
+
+
+No meu programa ele vai mostrar dessa forma: 
+
+1.Alceu
+2.Julio
+3.Igor
+4.Ribamar			
+
+
+		
+		
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+												<!--Lista não ordenada-->
+												
+--NA lista não ordenada trocaremos a tag <ol> pela tag <ul> : 											
+												
+<ul>
+    <li>Açucar</li>
+    <li>Arroz</li>
+    <li>Sal</li>
+    <li>Carne</li>
+</ul>					
+
+--que dicará dessa maneira: 
+
+
+*Açucar;
+*Arroz;
+*Sal;
+*Carne;
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+											      <!--Lista aninhada-->
+											      
+											      
+											      
+--Listas aninhadas são listas dentro de outras listas; 
+--Basta colocar uma tag link com uma stylesheet, e nela vai conter um link css que dentro há uma "arvore";
+
+
+
+<body>
+    <ul>
+        <ul>
+            <li>backend
+                <ul>
+                    app
+                    <li>produto.js</li>
+                    <li>Usuário.js</li>
+                    <li>Venda.js</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>Config
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                frontend
+                <ul>
+                    <li>app.js</li>
+                    <li>css.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
+</body>
+		
+		
+				
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+							     											      
+Se eu quiser fazer ligações entre as listas, como eu posso fazer?
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+--E crio uma classe com o nome arvore;
+
+
+
+
+<body>
+    <ul class="tree">
+        <ul>
+            <li>backend
+                <ul>
+                    app
+                    <li>produto.js</li>
+                    <li>Usuário.js</li>
+                    <li>Venda.js</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>Config
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                frontend
+                <ul>
+                    <li>app.js</li>
+                    <li>css.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
+    <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+</body>
+											      
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+												<!--Desafio-->
+
+
+1ª passo. 
+--vamos envolver todos os nosso nomes com a tag <span> pois ela serve com container e dentro dela colocaremos uma "função pasta" chamada <span wm-folder>;
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2º passo. 
+--vamos criar uma tag <script> e nela vamos vamos usar o queryselectorAll e digitaremos o nome da nossa pasta que no caso será (wm-folder)
+!!E lembrando como eu estou trabalhando com propriedade personalizada eu tenho que deixar meu componente entre []; 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3ª passo.
+--Depois que eu colocar a função query na frente dela vou colocar um ( forEach) e colocar o nome folder, porque a partir do momento que eu apertar no nome ele vai disparar o comando.
+--Dentro da minha função forEach vou colocar o comando : folder.onclick = funcion(e) { = isso significa que, eu vou asociar uma função recebendo evento. 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4º passo. 
+--dentro do meu script posso colocar o comando console.log e colocar um nome que pode ser ('teste') e ir no console, quando apertar nos nomes o meu console vai mostrar um nome; 
+--Depois que testar é só apgar o console;
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5º passo.
+--Vamos usar uma const ul= folder.nextElementeSibling e sob ele colocaremos uma console.log. 
+--Essa const serve para pegar tudo que está dentro das ul's e ir dando um next para ir pra proxima ul, para ver que de fato ele esta pegando uma ul;
+ 
+6º passo. 
+--agora vamos criar uma constante e colocaremos uma variável para representar o display da minha lista, se ele vai ser none ou block: const displ = ul.style.display;
+--vamos fazer uma especie de "if e else" ul.style.display = "nome a minha variável " == 'none' ? 'block' : 'none'; 
+
+
+ 
+ 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Resolução:
+
+1º passo. 
+
+
+
+
+<body>
+    <ul class="tree">
+        <ul>
+            <span wm-folder>Backend</span>
+            <li class="esconder-1">
+                <span wm-folder>App</span>
+                <ul>
+                    <li>produto.js</li>
+                    <li>Usuário.js</li>
+                    <li>Venda.js</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li class="esconder-2">
+                <span wm-folder>Config</span>
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li class="esconder-3">
+                <span wm-folder>Frontend</span>
+                <ul>
+                    <li>app.js</li>
+                    <li>css.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
+    </div>
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2º passo. 
+
+
+<script>
+    document.querySelectorAll('[wm-folder]')forEach( folder => {
+    
+    })
+</script>
+		
+		
+
+A tag script vai ficar a baixo do nosso link js; 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3ª passo. 
+
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function (e) {
+        
+              })
+</script>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+pulei o 4º passo e agora vou para o 5º
+
+
+const ul = folder.getElementsSibling
+const d = ul.style.display	
+ul.style.display = d === 'none' ? 'block' : 'none'; 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<ul class="tree">
+    <li>
+        <span wm-folder>Backend</span>
+        <ul>
+            <li>
+                <span wm-folder>App</span>
+                <ul>
+                    <li>produto.js</li>
+                    <li>usuário.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li>
+                <span wm-folder>Config</span>
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    <li>
+        <span wm-folder>Frontend</span>
+        <ul>
+            <li>
+                <span wm-folder>Public</span>
+                <ul>
+                    <li>app.js</li>
+                    <li>css.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    </li>
+</ul>
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function (e) {
+            const ul = folder.getElementsSibling
+            const d = ul.style.display
+            ul.style.display = d === 'none' ? 'block' : 'none';
+        }
+    })
+</script>

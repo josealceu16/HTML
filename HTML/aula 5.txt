@@ -1,0 +1,31 @@
+												Tags para textos
+												
+												
+												
+												
+											<!-- Cabeçalhos-->
+												
+--Eles vão desde <h1> até <h6>
+--Eles são representados pelos seus graus de importancia, ou seja, o meu 'h1' tem maior grau de importancia.
+
+
+
+
+										    <!--Parágrafos-->
+										    
+										    
+-- Criamos um paragrafo a partir da tag <p>			
+
+
+
+										<!--Texto em negrito e em italico-->
+para deixar em negrito usamos a tag <b> e para deixar m italico usamos a tag <i>
+<p>texto em <b>negrito</b> e em <i>italico</i></p>											
+										
+											
+										<!--Quebra de linha e quebra de temática-->
+
+usamos a tag 'br' para <br>quebrar uma linha </br>
+<hr> e usamos a tag 'hr' para quebrar uma tematica colocando
+<hr> uma linha na hotizontal.
+	

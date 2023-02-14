@@ -1,0 +1,83 @@
+												Formulário 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--Primeiro criaremos nossa tag form, depois vamos atribuir um input e dentro desse colocaremos um tipo text e vamos dar um nome a ele; 
+--E depois vamos dar um metodo e ele vai ser chamado de post.  
+--vamos criar um botton que quando o usuario responder o formulário autoaticamente vai ser mandado para o link que eu digitei. 	Esse link vai se chamar de: ttp://localhost:3003/usuarios
+								
+<form action="http://localhost:3003/usuarios" method="POST">
+    <input type="text" name="nome">
+    <button>Incluir</button>
+</form>
+
+
+
+--Esse button com o nome Incluir quer dizer que ao o meu usuario preencher o formulário ele vai ser incluido no meu link.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+												Vamos para o JavaScript
+												
+												
+--Agora vamos mecher no meu servidor para receber uma requisição pelo back-end;
+-- colocando um = const express: require('express')
+--Vamos assosiar nosso express com a variavel app = const app = express()
+--Vamos colocar uma = const bodyParser = require('body-parser') automaticamente ao receber o link de submição eu vou poder ter acesso aos dados que foram enviados pelo meu usuário. 
+-- Vamos assosiar o nosso app com o bodyparser dessa forma: app.use(bodyParser.urlcoded({extended: true}))
+--Depois vamos atender uma requisição de uma url do tipo post como tinha acabade de escrever na minha url. e vou colocar uma função mid vai retornar ua resposta para os usuarios, no caso vou colocar (req, resp) => ) 
+voi mostrar uma requisição e a resposta. 
+--Vou usar um console.log(req.body) para eu saber o que eu recebi do meu body; 
+--E vou usar um resp.send para mostrar alguma mensagem para o meu usuario ap[os ele responder o formulario; 
+--E por ultimo vamos fazer tudo isso funcionar colocando o seguint: app.listen() e dentro digite o numero da porta da minha url; 
+
+E ai ja vamos estar recebendo os dados; 
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+const express = require('express')
+const app = express()
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: true }))
+app.post('/usuarios', (req, res) => {
+    console.log(req.body)
+    resp.send('Parabéns!!!')
+})
+
+
+-- Agora vamos dar uma melhorada no nosso formulario.
+--Vamos atribuir mais uma caixa, caixa esse que vai ficar responsavel por captar a senha.
+--Vou criar botoes para selecionar algumas opções que vao ser as inputs do tipo radio; 
+-- E logo depois vou dar uma personalizada com o css;
+-- E criarei uma box que vai ser responsavel por captar alguns adicionais, como a biografia que o usuario pode digitar.
+--Criarei uma caixa que será possivel o usuario selecionar o estado em que mora; por meio de uma select e dentro dela colocarei um option.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<input type="text" name="nome" placeholder="Digite seu nome">
+<input type="password" name="password" placeholder="Digite sua senha">
+<textarea name="bios" cols="30" rows="10" placeholder="Digite sua biografia"></textare
+<div>
+    <h2>
+        Nivel de esperiencia
+    </h2>
+    <input type="radio" name="tipo">Senior
+    <input type="radio" name="tipo">Pleno
+    <input type="radio" name="tipo">Junior
+</div>
+<select name="estado">
+    <option value="pb">Paraiba</option>
+    <option value="ce">Ceará</option>
+    <option value="pe">Pernambuco</option>
+    <option value="ma">Maranhão</option>
+</select>
+<button>Enviar</button>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+											

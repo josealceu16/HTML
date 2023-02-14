@@ -1,0 +1,125 @@
+											//Um pouco de CSS//
+											
+
+No meu projeto para minhas tags eu posso atribuir duas propriedes mais importantes, são elas a 'id' e a 'class'; 
+
+A minha 'id' vai servir como indentificador ---- 	ÚNICO	 ----	 na minha página, ou seja, se eu tiver por exemplo um titulo e para eu estilizar ele ele precisar estar em alguma propriedade.
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Um pouco de CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>CSS</h1><br>
+        <span id="Texto numero 1">Text 1</span>
+        <span class="Texto secundario">Text 2</span>
+    </header>
+</body>
+
+</html>
+
+
+
+Lembrando que como minha id é unica eu vou ter que atribuir outra propriedade ela vai ser a class.
+Porque minha id só posso usar uma vez, isso serve de boas práticas no HTML.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Agora que a gente fez algumas tag para servir de exemplos vamos práticar. 
+
+Básicamente se for um projeto pequeno podemos estilizar dentro da minha própria html usando a tag <style> dentro da minha head, veja: 
+
+Para fazer formatação da minha tag basta eu digitala dentro do style a tag que eu quero, no caso vai ser o meu cabeçalho, tag H1. 
+E se eu quiser aplicar o mesmo estilo em uma outra tag posso uni-las apenas fazendo isso: 
+
+
+
+<style>
+        h1, span{
+            display: none; 
+        }
+</style>
+
+
+
+
+
+
+--O que faz esse display-none? simplesmente ele é responsável por mostrar ou não 
+--se eu quero que minha h1 desapareça, basta colocar display: none; 
+--E se eu tirar o display:none obviamente minha h1 vai aparecer, mas como eu coloquei a tag span junto tudo que esta na span e h1 vai sumir, retirando vão aparecer.
+-- Se apertar CNTRL+SPACE vai mostrar uma serie de comandos para personalizar : background-color ; color, entre outros.
+
+
+
+<style>
+    h1{
+        display: inline;
+        color: red;
+        position: absolute;
+        top: 100px;
+        left: 500px;
+        font-size: 30px;
+        padding: 20px;
+       }
+</style>
+
+Todos essas estilizações que estou escrevendo são só exemplos que estou estudando e que eu posso usar para estilizar minha página web.
+
+-- Esse color vai estabelecer uma cor para minha tag h1, ou seja, ele vai deixar meu cabeçalho com uma cor vermelha;
+-- O position vai ser relacionado com a posição; 
+-- O top tem relção com a altura, ou seja, ele vai ficar com 100px abaixo do top do site;
+--O left é a posição do meu conteudo para a direita; 
+--E o right é a posição do meu conteudo para a esquerda; 
+-- O font-size serve como estilizador para o tamanho da minha fonte como o prorprio nome já diz.
+-- Posso colocar um paddin que é usado para deixar um espaçamento; 
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Personalizar uma classe, para isso eu inicio ela dessa maneira: 
+
+
+#textonumero1 {
+    color: brown;
+}
+.textonumero2 {
+    color: blue;
+}
+
+
+
+
+
+OBS! 
+
+QUANDO EU FOR INICIAR UMA ID USO UM JOGO DA VELHA NA FRENTE!!!
+
+
+
+
+
+
+
+
+
+
